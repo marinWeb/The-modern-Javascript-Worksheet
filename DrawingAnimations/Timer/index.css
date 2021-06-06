@@ -1,0 +1,11 @@
+.container{
+    border: 1px solid black;
+    
+}
+
+.child{
+    background-color: red;
+    margin: 0 auto;
+    width : 300px;
+    height : 400px;
+}
