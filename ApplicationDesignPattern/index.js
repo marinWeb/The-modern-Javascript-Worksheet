@@ -1,4 +1,4 @@
-const apiKey = 'PUTURAPIKEY';
+const apiKey = 'YourApiKey';
 const autoCompleteConfig = {
   renderOptions(movie) {
     const imgSrc = movie.Poster === 'N/A' ? '' : movie.Poster;
@@ -148,7 +148,9 @@ const movieTemplate = (movieDetail) => {
         </article>
 
         <article data-value = ${metaScore} class= 'notification is-primary>
-            <p class = 'title'>${movieDetail.MetaScore}</p>
+            <p class = 'title'>${
+              movieDetail.MetaScore ? movieDetail.MetaScore : 'Unavailable'
+            }</p>
             <p class = 'subtitle'>Metascore</p>
         </article>
 
