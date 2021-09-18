@@ -4,6 +4,7 @@ const authRouter = require('./routes/admin/auth');
 const adminProductsRouter = require('./routes/admin/products');
 const productsRouter = require('./routes/products');
 const cartsRouter = require('./routes/carts');
+const wishlistRouter = require('./routes/wishlist');
 
 const bodyParser = require('body-parser');
 const cookieSession = require('cookie-session');
@@ -22,6 +23,7 @@ app.use(authRouter);
 app.use(productsRouter);
 app.use(adminProductsRouter);
 app.use(cartsRouter);
+app.use(wishlistRouter);
 
 app.listen(3000, () => {
   console.log('Listening');
