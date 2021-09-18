@@ -21,6 +21,12 @@ module.exports = ({ products }) => {
                 </button>
               </form>
             </footer>
+            <footer class="card-footer">
+              <form action="/wishlist" method="POST">
+                <input hidden value=${product.id} name='productId' />
+                <button class="button has-icon is-inverted">WishList</button>
+              </form>
+            </footer>
           </div>
         </div>
       `;

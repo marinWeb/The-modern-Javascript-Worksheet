@@ -54,7 +54,9 @@ module.exports = class Repository {
   }
 
   async update(id, attr) {
+    // console.log('in update() calling getAll()');
     const records = await this.getAll();
+    // console.log('After calling getAll()');
     const record = records.find((record) => record.id === id);
 
     Object.assign(record, attr);
